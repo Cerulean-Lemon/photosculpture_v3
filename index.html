@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTOSCULPTURE - 잊혀져 가는 것들의 아카이브</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-text">
+                <span>기</span><span>억</span><span>을</span>
+                <span>불</span><span>러</span><span>오</span><span>는</span>
+                <span>중</span><span>.</span><span>.</span><span>.</span>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="#">PHOTOSCULPTURE</a>
+        </div>
+        <div class="nav-menu">
+            <a href="#about" class="nav-link">소개</a>
+            <a href="#gallery" class="nav-link">갤러리</a>
+            <a href="#community" class="nav-link">커뮤니티</a>
+        </div>
+        <div class="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="#about" class="mobile-link">소개</a>
+            <a href="#gallery" class="mobile-link">갤러리</a>
+        </div>
+    </div>
+
+    <!-- Fixed Right Navigator - Simple & Clean -->
+    <div class="side-navigator">
+        <div class="nav-section-display">
+            <span class="nav-section-num">01</span>
+            <span class="nav-section-name">HOME</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Intro Sequence -->
+        <section class="intro-sequence" id="hero">
+            <!-- Step 1: 카드 이미지들 (sticky) -->
+            <div class="cards-container">
+                <div class="stack-items" data-item="0">
+                    <div class="stack-card" style="left: 0%">
+                        <img src="images/redphone.jpg" alt="다마고치">
+                    </div>
+                </div>
+                <div class="stack-items" data-item="1">
+                    <div class="stack-card" style="left: 16.666%">
+                        <img src="images/tape.jpg" alt="카세트">
+                    </div>
+                </div>
+                <div class="stack-items" data-item="2">
+                    <div class="stack-card" style="left: 33.333%">
+                        <img src="images/greenone.jpg" alt="폴더폰">
+                    </div>
+                </div>
+                <div class="stack-items" data-item="3">
+                    <div class="stack-card" style="left: 50%">
+                        <img src="images/ipod.jpg" alt="워크맨">
+                    </div>
+                </div>
+                <div class="stack-items" data-item="4">
+                    <div class="stack-card" style="left: 66.666%">
+                        <img src="images/purpleone.png" alt="게임보이">
+                    </div>
+                </div>
+                <div class="stack-items" data-item="5">
+                    <div class="stack-card" style="left: 83.333%">
+                        <img src="images/mymy.jpg" alt="비디오">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 2: Hero + Brand 통합 (카드 사라지면 등장) -->
+            <div class="hero-main">
+                <div class="hero-inner">
+                <div class="hero-inner">
+                    <!-- 중앙 정렬 레이아웃 -->
+                    <div class="hero-content">
+                        <!-- 상단 타이틀 -->
+                        <div class="hero-top-title">
+                            <div class="title-line"><span>잊혀져 가는 것들의</span></div>
+                        </div>
+                        
+                        <!-- 메인 브랜드 로고 -->
+                        <div class="hero-brand-main">
+                            <div class="brand-logo">
+                                <span class="brand-photo">PHOTO</span>
+                                <span class="brand-plus">+</span>
+                                <span class="brand-sculpture">SCULP<em>TURE</em></span>
+                            </div>
+                        </div>
+                        
+                        <!-- 하단 타이틀 -->
+                        <div class="hero-bottom-title">
+                            <div class="title-line accent"><span>아카이브</span></div>
+                        </div>
+                        
+                        <!-- 설명 텍스트 -->
+                        <div class="hero-description">
+                            <p class="brand-desc">사진 + 조각(품) / 문화</p>
+                            <p class="hero-tagline">DIGITAL MUSEUM OF FORGOTTEN THINGS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About - Visual & Impactful -->
+        <section class="about" id="about">
+            <div class="about-inner">
+                <!-- Big Statement -->
+                <div class="about-statement">
+                    <h2 class="about-big-text">
+                        <div class="split-line"><span>기억</span>은</div>
+                        <div class="split-line">사라지지만,</div>
+                    </h2>
+                </div>
+                
+                <!-- Visual + Text Layout -->
+                <div class="about-visual-section">
+                    <div class="about-image-col">
+                        <!-- 3D 플립 카드 -->
+                        <div class="about-flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/oldbook.jpg" alt="Old photographs" class="about-main-image">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="back-content">
+                                        <h3>추억의 사진첩</h3>
+                                        <p>필름 카메라로 찍은<br>소중한 순간들</p>
+                                        <span class="back-year">Since 1990</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text-col">
+                        <h2 class="about-second-text">
+                            <div class="split-line"><span>기록</span>은</div>
+                            <div class="split-line">남습니다.</div>
+                        </h2>
+                        <p class="about-desc">
+                            우리가 사랑했던 물건들,<br>
+                            함께했던 문화들이<br>
+                            시간 속에서 잊혀져 가고 있습니다.<br>
+                            우리는 잊혀져 가는 물건을 기록합니다.
+                        </p>
+                        <div class="about-cta">
+                            <span class="cta-text">기억의 여행 시작하기</span>
+                            <span class="cta-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 3: Time Travel Gallery - 새로운 인터랙티브 갤러리 -->
+        <section class="time-travel-gallery" id="gallery">
+            <!-- 배경 그라데이션 레이어 -->
+            <div class="gallery-bg-gradient"></div>
+            
+            <!-- 갤러리 헤더 -->
+            <div class="gallery-intro">
+                <div class="section-label">
+                    <span>02</span>
+                    <span class="label-line"></span>
+                    <span>TIME TRAVEL</span>
+                </div>
+                <h2 class="gallery-main-title">
+                    <div class="split-line">시간을 거슬러</div>
+                    <div class="split-line">기억 속으로</div>
+                </h2>
+                <p class="gallery-subtitle">스크롤하여 과거로의 여행을 시작하세요</p>
+            </div>
+
+            <!-- 타임라인 컨테이너 -->
+            <div class="timeline-container">
+                <!-- 2020년대 -->
+                <div class="timeline-era" data-era="2020s">
+                    <div class="era-header">
+                        <h3 class="era-title">2020<span>s</span></h3>
+                        <p class="era-subtitle">스마트폰의 진화, 디지털 네이티브</p>
+                    </div>
+                    
+                    <div class="swiper timeline-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="images/iphone.jpg" alt="아이폰">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2020</span>
+                                                <h4 class="card-title">아이폰 12</h4>
+                                                <p class="card-desc">5G 시대의 시작</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=101" alt="에어팟">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2021</span>
+                                                <h4 class="card-title">에어팟 프로</h4>
+                                                <p class="card-desc">무선의 자유</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=102" alt="스마트워치">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2022</span>
+                                                <h4 class="card-title">스마트워치</h4>
+                                                <p class="card-desc">손목 위의 컴퓨터</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=103" alt="태블릿">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2023</span>
+                                                <h4 class="card-title">아이패드 프로</h4>
+                                                <p class="card-desc">창작의 도구</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- 2010년대 -->
+                <div class="timeline-era" data-era="2010s">
+                    <div class="era-header">
+                        <h3 class="era-title">2010<span>s</span></h3>
+                        <p class="era-subtitle">스마트폰 혁명, SNS의 전성기</p>
+                    </div>
+                    
+                    <div class="swiper timeline-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=11" alt="인스타그램">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2010</span>
+                                                <h4 class="card-title">인스타그램</h4>
+                                                <p class="card-desc">사진으로 소통하다</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=12" alt="아이팟">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2012</span>
+                                                <h4 class="card-title">아이팟 나노</h4>
+                                                <p class="card-desc">주머니 속 음악</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=13" alt="GoPro">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2014</span>
+                                                <h4 class="card-title">고프로</h4>
+                                                <p class="card-desc">액션의 기록</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=14" alt="드론">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2016</span>
+                                                <h4 class="card-title">DJI 드론</h4>
+                                                <p class="card-desc">하늘에서 본 세상</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="images/greenone.jpg" alt="폴더폰">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2018</span>
+                                                <h4 class="card-title">폴더폰의 귀환</h4>
+                                                <p class="card-desc">레트로의 재발견</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- 2000년대 -->
+                <div class="timeline-era" data-era="2000s">
+                    <div class="era-header">
+                        <h3 class="era-title">2000<span>s</span></h3>
+                        <p class="era-subtitle">Y2K, 밀레니엄의 설렘</p>
+                    </div>
+                    
+                    <div class="swiper timeline-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=20" alt="플레이스테이션2">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2000</span>
+                                                <h4 class="card-title">플레이스테이션2</h4>
+                                                <p class="card-desc">게임의 새 시대</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="images/ipod.jpg" alt="아이팟">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2001</span>
+                                                <h4 class="card-title">아이팟</h4>
+                                                <p class="card-desc">1000곡을 주머니에</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=22" alt="싸이월드">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2003</span>
+                                                <h4 class="card-title">싸이월드</h4>
+                                                <p class="card-desc">미니홈피 전성시대</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=23" alt="닌텐도DS">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2004</span>
+                                                <h4 class="card-title">닌텐도 DS</h4>
+                                                <p class="card-desc">두 개의 화면</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=24" alt="USB">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">2006</span>
+                                                <h4 class="card-title">USB 메모리</h4>
+                                                <p class="card-desc">데이터의 자유</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- 1990년대 -->
+                <div class="timeline-era" data-era="1990s">
+                    <div class="era-header">
+                        <h3 class="era-title">1990<span>s</span></h3>
+                        <p class="era-subtitle">아날로그의 마지막 향연</p>
+                    </div>
+                    
+                    <div class="swiper timeline-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=30" alt="삐삐">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">1990</span>
+                                                <h4 class="card-title">삐삐</h4>
+                                                <p class="card-desc">숫자로 전하는 마음</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=31" alt="워크맨">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">1992</span>
+                                                <h4 class="card-title">워크맨</h4>
+                                                <p class="card-desc">이동 중 음악의 자유</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="images/tape.jpg" alt="카세트">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">1994</span>
+                                                <h4 class="card-title">카세트테이프</h4>
+                                                <p class="card-desc">연필로 돌리던 추억</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=33" alt="게임보이">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">1996</span>
+                                                <h4 class="card-title">게임보이</h4>
+                                                <p class="card-desc">휴대용 게임의 시작</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timeline-memory-card" data-tilt>
+                                    <div class="card-inner">
+                                        <div class="card-image">
+                                            <img src="https://picsum.photos/400/550?random=34" alt="비디오">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-overlay-content">
+                                                <span class="card-year">1998</span>
+                                                <h4 class="card-title">비디오테이프</h4>
+                                                <p class="card-desc">영화관을 집으로</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 진행 표시기 -->
+            <div class="gallery-progress">
+                <div class="progress-line">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-markers">
+                    <span data-year="2020s">2020s</span>
+                    <span data-year="2010s">2010s</span>
+                    <span data-year="2000s">2000s</span>
+                    <span data-year="1990s">1990s</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 6: Story Detail - 가로 스크롤 -->
+
+        <!-- Section 6: Community -->
+        <section class="community" id="community">
+            <div class="community-inner">
+                <div class="section-label center">
+                    <span>05</span>
+                    <span class="label-line"></span>
+                    <span>COMMUNITY</span>
+                </div>
+
+                <h2 class="community-title">
+                    <div class="split-line">당신의 기억을</div>
+                    <div class="split-line">나눠주세요</div>
+                </h2>
+
+                <!-- 무한 슬라이드 트랙 -->
+                <div class="memory-slider">
+                    <div class="memory-track">
+                        <!-- 3D 틸트 카드들 -->
+                        <div class="memory-card" data-tilt>
+                            <div class="card-inner">
+                                <img src="https://picsum.photos/400/500?random=30" alt="User memory">
+                                <div class="card-overlay">
+                                    <div class="card-overlay-content">
+                                        <h4>빨간 자동차 장난감</h4>
+                                        <p class="card-user">@nostalgic_80s</p>
+                                        <div class="card-stats">
+                                            <span>❤️ 234</span>
+                                            <span>💬 12</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+
+                        <div class="memory-card" data-tilt>
+                            <div class="card-inner">
+                                <img src="https://picsum.photos/400/500?random=31" alt="User memory">
+                                <div class="card-overlay">
+                                    <div class="card-overlay-content">
+                                        <h4>연필깎이</h4>
+                                        <p class="card-user">@school_days</p>
+                                        <div class="card-stats">
+                                            <span>❤️ 567</span>
+                                            <span>💬 34</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+
+                        <div class="memory-card" data-tilt>
+                            <div class="card-inner">
+                                <img src="https://picsum.photos/400/500?random=32" alt="User memory">
+                                <div class="card-overlay">
+                                    <div class="card-overlay-content">
+                                        <h4>문방구 뽑기</h4>
+                                        <p class="card-user">@retro_lover</p>
+                                        <div class="card-stats">
+                                            <span>❤️ 891</span>
+                                            <span>💬 56</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+
+                        <div class="memory-card" data-tilt>
+                            <div class="card-inner">
+                                <img src="https://picsum.photos/400/500?random=33" alt="User memory">
+                                <div class="card-overlay">
+                                    <div class="card-overlay-content">
+                                        <h4>카세트 테이프</h4>
+                                        <p class="card-user">@tape_collector</p>
+                                        <div class="card-stats">
+                                            <span>❤️ 445</span>
+                                            <span>💬 28</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+
+                        <div class="memory-card" data-tilt>
+                            <div class="card-inner">
+                                <img src="https://picsum.photos/400/500?random=34" alt="User memory">
+                                <div class="card-overlay">
+                                    <div class="card-overlay-content">
+                                        <h4>삐삐</h4>
+                                        <p class="card-user">@pager_gen</p>
+                                        <div class="card-stats">
+                                            <span>❤️ 723</span>
+                                            <span>💬 41</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+
+                        <div class="memory-card" data-tilt>
+                            <div class="card-inner">
+                                <img src="https://picsum.photos/400/500?random=35" alt="User memory">
+                                <div class="card-overlay">
+                                    <div class="card-overlay-content">
+                                        <h4>게임보이</h4>
+                                        <p class="card-user">@game_memories</p>
+                                        <div class="card-stats">
+                                            <span>❤️ 1.2k</span>
+                                            <span>💬 89</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 기억 기증하기 버튼 -->
+                <div class="add-memory-section">
+                    <div class="memory-card add-memory">
+                        <div class="add-content">
+                            <span class="add-icon">+</span>
+                            <p>기억 기증하기</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>PHOTOSCULPTURE</h3>
+                    <p>잊혀져 가는 것들의 디지털 박물관</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>탐색</h4>
+                        <a href="#about">소개</a>
+                        <a href="#gallery">갤러리</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>참여</h4>
+                        <a href="#community">기억 기증</a>
+                        <a href="#">연락하기</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2025 PHOTOSCULPTURE. 기억은 영원히.</p>
+                </div>
+            </div>
+
+            <!-- Rolling Text Footer -->
+            <div class="footer-rolling">
+                <div class="footer-rolling-track">
+                    <span>REMEMBER</span>
+                    <span>·</span>
+                    <span>PRESERVE</span>
+                    <span>·</span>
+                    <span>SHARE</span>
+                    <span>·</span>
+                    <span>기억하다</span>
+                    <span>·</span>
+                    <span>보존하다</span>
+                    <span>·</span>
+                    <span>나누다</span>
+                    <span>·</span>
+                    <span>REMEMBER</span>
+                    <span>·</span>
+                    <span>PRESERVE</span>
+                    <span>·</span>
+                    <span>SHARE</span>
+                    <span>·</span>
+                    <span>기억하다</span>
+                    <span>·</span>
+                    <span>보존하다</span>
+                    <span>·</span>
+                    <span>나누다</span>
+                    <span>·</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" title="맨 위로 이동">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
